@@ -4,8 +4,8 @@
 
 *lưu trữ dữ liệu trên firebase hoặc csv/excel (done - chọn firebase)
 FireBase: (done)
-ref_url: https://bpm-spo2-esp32-default-rtdb.asia-southeast1.firebasedatabase.app/
-api: AIzaSyDhWsg5TsyG2BnGKm7d9nFnibnVnXe-FaM
+ref_url: url/
+api: api
 
 22:43 3/12/24
 
