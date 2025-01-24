@@ -1,0 +1,39 @@
+*Host webserver - có thể thể host được 1 web đơn giản. Nhưng chưa thực sự dùng được gì (done)
+
+
+
+*lưu trữ dữ liệu trên firebase hoặc csv/excel (done - chọn firebase)
+FireBase: (done)
+ref_url: https://bpm-spo2-esp32-default-rtdb.asia-southeast1.firebasedatabase.app/
+api: AIzaSyDhWsg5TsyG2BnGKm7d9nFnibnVnXe-FaM
+
+22:43 3/12/24
+
+-Thêm giá trị tuổi - users (done)
+-Thêm giá trị ngưỡng cảnh cáo spo2 và bpm - có lẽ sử dụng 1 công thức dùng tuổi của users để tính ngưỡng ngay trong esp32
+-fine tune lại data gửi đến rtdb - 90<spo2 < 100, bpm < 220 (dùng tuổi để cụ thể hơn) |(xoá đi giá trị -999)
+ ^ semi-done 
+-Chia các func trong js phù hợp vs html đg dùng -> dùng $('# ') (done)
+*Giải quyết trường hợp nếu ko có users nào.
+-tạo hàm lấy giá trị total users (done)
+
+
+***Thêm chức năng xoá user và xoá record - level: hard :")
+-xoá tất cả (done ?)
+-xoá cụ thể - level:impossible
+
+
+Sửa tooltip ở index.
+Sửa lỗi xoá all data xong page ko reload hoặc ko dùng fetchUser
+khi ko có record thì xoá record sẽ bị disabled.
+thêm btn thể hiện total user
+thêm btn thể hiện số lần đo (low prio)
+^^^All done
+check xem màn hình cảnh báo ngưỡng có hoạt động ko 
+(done)
+-có thể thêm btn thể hiện bpm range ở record, sử dụng full js  (low prio)
+
+-sửa xoá record
+-sửa màn hiện thị sau khi lấy mẫu (done)
+-tỉnh chỉnh các request : nhất là các request xoá, có hộp confirm. Nên để check nếu giá trị trả về là yes thì ms thực hiện
+-sửa nút reloadController
